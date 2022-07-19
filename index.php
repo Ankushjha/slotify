@@ -15,12 +15,39 @@ if (isset($_SESSION['userLoggedIn'])) {
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Welcome to Slotify</title>
-	<link rel="stylesheet" href="includes/assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 	<div id="mainContainer">
-		<div id="topContainer"></div>
+		<div id="topContainer">
+			<div id="navBarContainer">
+				<nav class="navBar">
+					<a href="index.php" class="logo">
+						<img src="assets/images/icons/logo.png" alt="logo">
+					</a>
+
+					<div class="group">
+						<div class="navItem">
+							<a href="search.php" class="navItemLink">Search
+								<img src="assets/images/icons/search.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="group">
+					<div class="navItem">
+							<a href="browse.php" class="navItemLink">Browse</a>
+						</div>
+						<div class="navItem">
+							<a href="yourMusic.php" class="navItemLink">Your Music</a>
+						</div>
+						<div class="navItem">
+							<a href="profile.php" class="navItemLink">Ankush Jha</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
 	</div>
 
 	<div id="nowPlayingBarContainer">
@@ -47,22 +74,22 @@ if (isset($_SESSION['userLoggedIn'])) {
 				<div class="content playerControls">
 					<div class="buttons">
 						<button class="controlButton shuffle" title="Shuffle button">
-							<img src="includes/assets/images/icons/shuffle.png" alt="Shuffle">
+							<img src="assets/images/icons/shuffle.png" alt="Shuffle">
 						</button>
 						<button class="controlButton previous" title="Previous button">
-							<img src="includes/assets/images/icons/previous.png" alt="Previous">
+							<img src="assets/images/icons/previous.png" alt="Previous">
 						</button>
 						<button class="controlButton play" title="Play button">
-							<img src="includes/assets/images/icons/play.png" alt="Play">
+							<img src="assets/images/icons/play.png" alt="Play">
 						</button>
 						<button class="controlButton pause" title="Pause button" style="display: none;">
-							<img src="includes/assets/images/icons/pause.png" alt="Pause">
+							<img src="assets/images/icons/pause.png" alt="Pause">
 						</button>
 						<button class="controlButton next" title="next button">
-							<img src="includes/assets/images/icons/next.png" alt="Next">
+							<img src="assets/images/icons/next.png" alt="Next">
 						</button>
 						<button class="controlButton repeat" title="Repeat button">
-							<img src="includes/assets/images/icons/repeat.png" alt="Repeat">
+							<img src="assets/images/icons/repeat.png" alt="Repeat">
 						</button>
 					</div>
 
@@ -84,7 +111,7 @@ if (isset($_SESSION['userLoggedIn'])) {
 
 				<div class="volumeBar">
 					<button class="controlButton volume" title="Volume button">
-						<img src="includes/assets/images/icons/volume.png" alt="Volume">
+						<img src="assets/images/icons/volume.png" alt="Volume">
 					</button>
 					<div class="progressBar">
 						<div class="progressBarBg">
